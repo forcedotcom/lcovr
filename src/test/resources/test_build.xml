@@ -1,0 +1,13 @@
+<project name="MyProject">
+    <target name="runLcov">
+        <taskdef name="lcov" classname="com.force.mobile.build.tools.lcovr.Lcovr"/>
+        <lcov output="coverage.xml">
+            <input>
+                <fileset file="coverage.lcov"/>
+            </input>
+            <sourcedirs>
+                <fileset file="src"/>
+            </sourcedirs>
+        </lcov>
+    </target>
+</project>
